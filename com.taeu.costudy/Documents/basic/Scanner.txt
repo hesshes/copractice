@@ -1,0 +1,47 @@
+[ Scanner ]
+- Scanner 클래스는 자바의 입출력 방법 중 하나로 java.util 패키지에 포함
+- 토큰(공백, 개행, 탭)을 기준으로 데이터를 입력 받음
+- new Scanner(System.in)
+* System.in ?
+ [ System.in이란? ] 
+	- java.io.*에서 Import하는 클래스
+	- 값을 입력받는 클래스
+	- 값은 여러가지 방식으로 들어오기 때문에 만약 잘못된 값이 들어온 경우 에러가 나지 않도록 예외처리를 필수로 해줘야 함
+	- try-catch구문 혹은 IOException을 사용하여 예외처리를 하지 않으면 에러
+	- System.in은 내부에서 InputStream을 사용
+	- InputeStream은 바이트 스트림으로 byte 단위로 데이터를 읽음
+	[System 클래스란? ]
+		- 운영체제 시스템과 관련된 기능을 제공하는 클래스
+		- 모든 멤버가 기본 static이기 때문에 별도의 인스턴스 객체를 생성할 필요가 없음
+		- 표준 입출력 관리와, 환경 변수 접근, 시스템 속성 , 현재 ms / ns 시각 확인 , 객체 복사 등에 사용.
+		
+
+[ Scanner 클래스의 메서드 ]
+1. next()
+ - String을 Token 기준으로 읽음
+
+2. nextLine()
+ - String을 개행(Enter)을 기준으로 읽음
+ 
+3. nextBoolean()
+ - boolean 을 읽음
+
+4. nextByte()
+ - byte를 읽음
+
+5. nextShort() 
+ - short를 읽음
+ 
+6. nextLong()
+ - long을 읽음
+
+7. nextFloat()
+ - float을 읽음
+
+8. nextDouble()
+ - double을 읽음
+ 
+9. nextInt()
+ - int를 읽음
+ 
+
