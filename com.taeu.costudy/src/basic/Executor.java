@@ -7,6 +7,7 @@ import basic.modules.Solution03;
 import basic.modules.Solution04;
 import basic.modules.Solution05;
 import basic.modules.Solution06;
+import basic.modules.Solution07;
 
 public class Executor {
 	public static void main(String[] args) {
@@ -29,9 +30,11 @@ public class Executor {
 		 * 기초 5번 new Solution05().solution();
 		 */
 
-		/* 기초 6번 */
-		new Solution06().solution();
+		/*
+		 * 기초 6번 new Solution06().solution();
+		 */
 
+		new Solution07().solution();
 	}
 
 }
