@@ -1,0 +1,10 @@
+[ String ]
+- 생성 방식에 2가지가 존재, new 연산자와 리터럴을 이용한 방식
+- new 연산자를 통해 생성하면 heap 영역에 존재 ( String a = new String("new");
+- 리터럴 방식을 이용하면 string constant pool에 생성 (String a = "리터럴 공간";
+- string constant pool에 생성된 문자는 재사용 됨
+
+[ String interning ]
+- String을 literal로 선언할 경우 내부적으로 String의 intern() 메서드가 호출 됨
+- intern() 메서드는 주어진 문자열이 string constant pool에 존재하는지 검색하고
+ 있다면 그 주소값을 반환하고 없다면 string constant pool에 넣고 새로운 주소값을 반환
