@@ -13,6 +13,9 @@ import basic.modules.Solution09;
 import basic.modules.Solution10;
 import basic.modules.Solution11;
 import basic.modules.Solution12;
+import basic.modules.Solution14;
+import basic.modules.Solution15;
+import basic.modules.Solution13;
 
 public class Executor {
 	public static void main(String[] args) {
@@ -60,8 +63,22 @@ public class Executor {
 		 * System.out.println(answer);
 		 */
 
-		String answer = new Solution12().solution(new String[] {"a", "bdd","d","f"});
-		System.out.println(answer);
+		/*
+		 * 기초 12번 String answer = new Solution12().solution(new String[] {"a",
+		 * "bdd","d","f"}); System.out.println(answer);
+		 */
+
+		/*
+		 * 기초 13번 String answer = new Solution13().solution("love", 4);
+		 * System.out.println(answer);
+		 */
+
+		/*
+		 * 기초 14번 System.out.println(new Solution14().solution(42, 323));
+		 */
+		
+		/* 기초 15번 */
+		System.out.println(new Solution15().solution(2, 91));
 
 	}
 
