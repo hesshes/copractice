@@ -17,6 +17,7 @@ import basic.modules.Solution14;
 import basic.modules.Solution15;
 import basic.modules.Solution16;
 import basic.modules.Solution17;
+import basic.modules.Solution18;
 import basic.modules.Solution13;
 
 public class Executor {
@@ -91,8 +92,10 @@ public class Executor {
 		 */
 		/*
 		 * 기초 17번*
+		 * 
+		 * System.out.println(new Solution17().solution(55,10,5));
 		 */
-		System.out.println(new Solution17().solution(55,10,5));
+		System.out.println(new Solution18().solution(7));
 
 	}
 
