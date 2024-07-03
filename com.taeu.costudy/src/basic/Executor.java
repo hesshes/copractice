@@ -18,6 +18,8 @@ import basic.modules.Solution15;
 import basic.modules.Solution16;
 import basic.modules.Solution17;
 import basic.modules.Solution18;
+import basic.modules.Solution19;
+import basic.modules.Solution20;
 import basic.modules.Solution13;
 
 public class Executor {
@@ -86,17 +88,24 @@ public class Executor {
 		 */
 
 		/*
-		 * 기초 16번*
+		 * 기초 16번
 		 * 
 		 * System.out.println(new Solution16().solution(99, 9));
 		 */
 		/*
-		 * 기초 17번*
+		 * 기초 17번
 		 * 
 		 * System.out.println(new Solution17().solution(55,10,5));
 		 */
-		System.out.println(new Solution18().solution(7));
 
+		/*
+		 * 기초 18번 System.out.println(new Solution18().solution(7));
+		 */
+
+		/*
+		 * 기초 19번 System.out.println(new Solution19().solution("<","=",20,50));
+		 */
+
+		System.out.println(new Solution20().solution(-4, 7, false));
 	}
-
 }
