@@ -20,6 +20,8 @@ import basic.modules.Solution17;
 import basic.modules.Solution18;
 import basic.modules.Solution19;
 import basic.modules.Solution20;
+import basic.modules.Solution21;
+import basic.modules.Solution22;
 import basic.modules.Solution13;
 
 public class Executor {
@@ -106,6 +108,11 @@ public class Executor {
 		 * 기초 19번 System.out.println(new Solution19().solution("<","=",20,50));
 		 */
 
-		System.out.println(new Solution20().solution(-4, 7, false));
+		/*
+		 * 기초 20번 System.out.println(new Solution20().solution(-4, 7, false));
+		 */
+		
+		/* 기초 21번 */				
+		System.out.println(new Solution22().solution(3,4, new boolean[]{true,false,false,true,true}));
 	}
 }
