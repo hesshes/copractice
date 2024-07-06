@@ -1,0 +1,55 @@
+
+IntStram 이란?
+
+Java8에서 데이터를 더 효과적으로 처리할 수 있는 새로운 기능인 Stream API 중 한 부분.
+'int' 에 대한 순차 및 병렬 집계 연산을 수행하는 데 사용
+반복문 없이도 배열이나 컬렉션의 데이터를 처리할 수 있음
+
+ 
+IntStram 주요 메서드
+ 
+import java.util.stream.IntStream;
+ 
+1. range와 rangeClosed
+
+'range' 와 'rangeClosed' 메소드는 주어진 범위 내 순차적인 정수 스트림을 반환
+'range'는 마지막 정수를 포함하지 않는 반면, 'rageClosed'는 마지막 정수를 포함
+
+IntStream.range(1, 5).forEach(System.out::print); // 출력: 1234
+IntStream.rangeClosed(1, 5).forEach(System.out::print); // 출력: 12345
+ 
+2. of
+
+지정된 값을 포함하는 순차적인 정수 스트림을 반환
+
+IntStream.of(1, 2, 3, 4, 5).forEach(System.out::print); // 출력: 12345
+ 
+3. map과 filter
+
+'map' : 주어진 함수를 스트림의 각 요소에 적용한 결과로 구성된 스트림을 반환
+'filter' :  주어진 술어(predicate)와 일치하는 요소만 포함하는 스트림을 반환
+
+IntStream.rangeClosed(1, 5)
+    .map(n -> n * n)
+    .filter(n -> n % 2 == 0)
+    .forEach(System.out::println); // 출력: 4, 16
+ 
+4.sum, average, max, min
+
+'sum' : 각각 스트림의 요소의 합계 반환
+'average' : 각각 스트림의 요소의 평균 반환
+'max' : 각각 스트림의 요소의 최대값 반환
+'min' : 각각 스트림의 요소의 최소값 반환
+
+int sum = IntStream.rangeClosed(1, 5).sum();
+double avg = IntStream.rangeClosed(1, 5).average().getAsDouble();
+int max = IntStream.rangeClosed(1, 5).max().getAsInt();
+ 
+5. anyMatch
+
+스트림의 요소 중 어느 하나라도 주어진 술어를 만족하면 'true'를 반환
+
+boolean anyMatch = IntStream.of(1, 2, 3, 4, 5).anyMatch(n -> n == 3);
+System.out.println(anyMatch); // 출력: true
+ 
+출처: https://data04190.tistory.com/59 [Myo-Kyeong Tech Blog:티스토리]
