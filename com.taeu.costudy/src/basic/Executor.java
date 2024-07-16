@@ -22,14 +22,16 @@ import basic.modules.Solution19;
 import basic.modules.Solution20;
 import basic.modules.Solution21;
 import basic.modules.Solution22;
+import basic.modules.Solution23;
 import basic.modules.Solution13;
 
 public class Executor {
 	public static void main(String[] args) {
 
 		/*
-		 * 기초 1번 Solution01 se01 = new Solution01(); int[] nums = { 0, 1, 6, 4, 2, 7, 9,
-		 * 5 }; List answer = se01.solution(nums, 3);
+		 * 기초 1번 Solution01 se01 = new Solution01(); int[] nums = {
+		 * 0, 1, 6, 4, 2, 7, 9, 5 }; List answer =
+		 * se01.solution(nums, 3);
 		 * System.out.println(answer.toString());
 		 */
 
@@ -61,43 +63,44 @@ public class Executor {
 		 */
 
 		/*
-		 * 기초 10번 String test = new Solution10().solution("He11oWor1d", "lloWorl", 2);
+		 * 기초 10번 String test = new
+		 * Solution10().solution("He11oWor1d", "lloWorl", 2);
 		 * System.out.println(test);
 		 */
 
 		/*
-		 * 기초 11번 String answer = new Solution11().solution("aaa", "bbb");
+		 * 기초 11번 String answer = new Solution11().solution("aaa",
+		 * "bbb"); System.out.println(answer);
+		 */
+
+		/*
+		 * 기초 12번 String answer = new Solution12().solution(new
+		 * String[] {"a", "bdd","d","f"});
 		 * System.out.println(answer);
 		 */
 
 		/*
-		 * 기초 12번 String answer = new Solution12().solution(new String[] {"a",
-		 * "bdd","d","f"}); System.out.println(answer);
+		 * 기초 13번 String answer = new Solution13().solution("love",
+		 * 4); System.out.println(answer);
 		 */
 
 		/*
-		 * 기초 13번 String answer = new Solution13().solution("love", 4);
-		 * System.out.println(answer);
+		 * 기초 14번 System.out.println(new Solution14().solution(42,
+		 * 323));
 		 */
 
 		/*
-		 * 기초 14번 System.out.println(new Solution14().solution(42, 323));
+		 * 기초 15번 System.out.println(new Solution15().solution(2,
+		 * 91));
 		 */
 
 		/*
-		 * 기초 15번 System.out.println(new Solution15().solution(2, 91));
-		 * 
-		 */
-
-		/*
-		 * 기초 16번
-		 * 
-		 * System.out.println(new Solution16().solution(99, 9));
+		 * 기초 16번 System.out.println(new Solution16().solution(99,
+		 * 9));
 		 */
 		/*
-		 * 기초 17번
-		 * 
-		 * System.out.println(new Solution17().solution(55,10,5));
+		 * 기초 17번 System.out.println(new
+		 * Solution17().solution(55,10,5));
 		 */
 
 		/*
@@ -105,14 +108,22 @@ public class Executor {
 		 */
 
 		/*
-		 * 기초 19번 System.out.println(new Solution19().solution("<","=",20,50));
+		 * 기초 19번 System.out.println(new
+		 * Solution19().solution("<","=",20,50));
 		 */
 
 		/*
-		 * 기초 20번 System.out.println(new Solution20().solution(-4, 7, false));
+		 * 기초 20번 System.out.println(new Solution20().solution(-4,
+		 * 7, false));
 		 */
+
+		/*
+		 * 기초 22번 System.out.println(new Solution22().solution(3,4,
+		 * new boolean[]{true,false,false,true,true}));
+		 */
+		/* 기초 23번 */
+		System.out.println(new Solution23().solution(4,4,4));
 		
-		/* 기초 21번 */				
-		System.out.println(new Solution22().solution(3,4, new boolean[]{true,false,false,true,true}));
+		
 	}
 }
