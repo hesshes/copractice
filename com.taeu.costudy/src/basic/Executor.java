@@ -28,6 +28,10 @@ import basic.modules.Solution23;
 import basic.modules.Solution24;
 import basic.modules.Solution25;
 import basic.modules.Solution26;
+import basic.modules.Solution27;
+import basic.modules.Solution28;
+import basic.modules.Solution29;
+import basic.modules.Solution30;
 import basic.modules.Solution13;
 
 public class Executor {
@@ -127,8 +131,24 @@ public class Executor {
          * 기초 25번 System.out.println(new Solution25().solution(new int[] { 5, 7, 8, 3
          * }));
          */
-        /* 기초 26번 */
-        int[] result = new Solution26().solution(new int[] { 2, 1, 6 });
-        System.out.println(Arrays.toString(result));
+        /*
+         * 기초 26번 int[] result = new Solution26().solution(new int[] { 2, 1, 6 });
+         * System.out.println(Arrays.toString(result));
+         */
+
+        /*
+         * 기초 27 int result = new Solution27().solution(0, "wsdawsdassw");
+         * System.out.println(result);
+         */
+        /*
+         * 기초 28 System.out.println(new Solution28().solution(new int[] { 0, 1, 0, 10,
+         * 0, 1, 0, 10, 0, -1, -2, -1 }));
+         */
+        /*
+         * 기초 29 System.out.println(Arrays.toString(new Solution29().solution(new int[]
+         * {0, 1, 2, 3, 4}, new int[][] {{0, 3},{1, 2},{1, 4}})));
+         */
+        System.out.println(Arrays.toString(new Solution30().solution(new int[] { 0, 1, 2, 4, 3 },
+                new int[][] { { 0, 4, 2 }, { 0, 3, 2 }, { 0, 2, 2 } })));
     }
 }
