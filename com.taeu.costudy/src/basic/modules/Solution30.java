@@ -1,6 +1,8 @@
 package basic.modules;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Solution30 {
@@ -22,7 +24,42 @@ public class Solution30 {
 //    0 ≤ s ≤ e < arr의 길이
 //    0 ≤ k ≤ 1,000,000
 
-    public Object[] solution(int[] arr, int[][] queries) {
-        return result.toArray();
+    public int[] solution(int[] arr, int[][] queries) {
+        int[] answer = new int[queries.length];
+
+        for (int i = 0; i < queries.length; i++) {
+            List<Integer> nums = new ArrayList<Integer>();
+            for (int j = queries[i][0]; j <= queries[i][1]; j++) {
+                if (queries[i][2] < arr[j]) {
+                    nums.add(arr[j]);
+                }
+            }
+            if (nums.size() != 0 && !nums.isEmpty()) {
+                answer[i] = Collections.min(nums);
+            } else {
+                answer[i] = -1;
+            }
+
+        }
+        return answer;
+        /*
+         * 프로그래머스에서 가장 많은 추천 코드
+         * 
+         * int[] answer = new int[queries.length]; Arrays.fill(answer, -1);
+         * 
+         * for (int idx = 0; idx < queries.length; idx++) { int[] query = queries[idx];
+         * int s = query[0], e = query[1], k = query[2];
+         * 
+         * for (int i = s; i <= e; i++) { if (k < arr[i]) { answer[idx] = answer[idx] ==
+         * -1 ? arr[i] : Math.min(answer[idx], arr[i]); } } }
+         * 
+         * return answer;
+         */
+
+        /*
+         * 프로그래머스 스트림 코드 return IntStream.range(0, queries.length) .map(q ->
+         * IntStream.rangeClosed(queries[q][0], queries[q][1]) .map(i -> arr[i])
+         * .filter(i -> i > queries[q][2]) .min().orElse(-1) ).toArray();
+         */
     }
 }
