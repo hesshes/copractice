@@ -3,36 +3,41 @@ package basic;
 import java.util.Arrays;
 import java.util.List;
 
-import basic.modules.Solution01;
-import basic.modules.Solution03;
-import basic.modules.Solution04;
-import basic.modules.Solution05;
-import basic.modules.Solution06;
-import basic.modules.Solution07;
-import basic.modules.Solution08;
-import basic.modules.Solution09;
-import basic.modules.Solution10;
-import basic.modules.Solution11;
-import basic.modules.Solution12;
-import basic.modules.Solution13;
-import basic.modules.Solution14;
-import basic.modules.Solution15;
-import basic.modules.Solution16;
-import basic.modules.Solution17;
-import basic.modules.Solution18;
-import basic.modules.Solution19;
-import basic.modules.Solution20;
-import basic.modules.Solution21;
-import basic.modules.Solution22;
-import basic.modules.Solution23;
-import basic.modules.Solution24;
-import basic.modules.Solution25;
-import basic.modules.Solution26;
-import basic.modules.Solution27;
-import basic.modules.Solution28;
-import basic.modules.Solution29;
-import basic.modules.Solution30;
-import basic.modules.Solution13;
+import basic.modules.day01.Solution01;
+import basic.modules.day01.Solution03;
+import basic.modules.day01.Solution04;
+import basic.modules.day01.Solution05;
+import basic.modules.day02.Solution06;
+import basic.modules.day02.Solution07;
+import basic.modules.day02.Solution08;
+import basic.modules.day02.Solution09;
+import basic.modules.day02.Solution10;
+import basic.modules.day03.Solution11;
+import basic.modules.day03.Solution12;
+import basic.modules.day03.Solution13;
+import basic.modules.day03.Solution14;
+import basic.modules.day03.Solution15;
+import basic.modules.day04.Solution16;
+import basic.modules.day04.Solution17;
+import basic.modules.day04.Solution18;
+import basic.modules.day04.Solution19;
+import basic.modules.day04.Solution20;
+import basic.modules.day05.Solution21;
+import basic.modules.day05.Solution22;
+import basic.modules.day05.Solution23;
+import basic.modules.day05.Solution24;
+import basic.modules.day05.Solution25;
+import basic.modules.day06.Solution26;
+import basic.modules.day06.Solution27;
+import basic.modules.day06.Solution28;
+import basic.modules.day06.Solution29;
+import basic.modules.day06.Solution30;
+import basic.modules.day07.Solution31;
+import basic.modules.day07.Solution32;
+import basic.modules.day07.Solution33;
+import basic.modules.day07.Solution34;
+import basic.modules.day07.Solution35;
+import basic.modules.day08.Solution36;
 
 public class Executor {
     public static void main(String[] args) {
@@ -148,7 +153,33 @@ public class Executor {
          * 기초 29 System.out.println(Arrays.toString(new Solution29().solution(new int[]
          * {0, 1, 2, 3, 4}, new int[][] {{0, 3},{1, 2},{1, 4}})));
          */
-        System.out.println(Arrays.toString(new Solution30().solution(new int[] { 0, 1, 2, 4, 3 },
-                new int[][] { { 0, 4, 2 }, { 0, 3, 2 }, { 0, 2, 2 } })));
+        /*
+         * 기초 30 System.out.println(Arrays.toString(new Solution30().solution(new int[]
+         * { 0, 1, 2, 4, 3 }, new int[][] { { 0, 4, 2 }, { 0, 3, 2 }, { 0, 2, 2 } })));
+         */
+
+        /*
+         * 기초31 System.out.println(Arrays.toString(new Solution31().solution(new int[] {
+         * 0, 1, 2, 4, 3 }, new int[][] { { 0, 4, 1 }, { 0, 3, 2 }, { 0, 3, 3 } })));
+         */
+        /*
+         * 기초 32 System.out.println(Arrays.toString(new Solution32().solution(5, 555)));
+         */
+
+        /*
+         * 기초 33 System.out.println(Arrays.toString(new Solution33().solution(5, 555)));
+         */
+
+        /*
+         * 기초 34 System.out.println(Arrays.toString(new Solution34().solution(5, 555)));
+         */
+
+        /*
+         * 기초 35 System.out.println(Arrays.toString(new Solution35().solution(5, 555)));
+         */
+
+        /* 기초 36 */
+        System.out.println(new Solution36().solution(false, true, true, true));
+        System.out.println(new Solution36().solution(true, false, false, false));
     }
 }
