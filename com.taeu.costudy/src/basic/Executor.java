@@ -38,6 +38,9 @@ import basic.modules.day07.Solution33;
 import basic.modules.day07.Solution34;
 import basic.modules.day07.Solution35;
 import basic.modules.day08.Solution36;
+import basic.modules.day08.Solution38;
+import basic.modules.day08.Solution39;
+import basic.modules.day08.Solution40;
 
 public class Executor {
     public static void main(String[] args) {
@@ -178,8 +181,30 @@ public class Executor {
          * 기초 35 System.out.println(Arrays.toString(new Solution35().solution(5, 555)));
          */
 
-        /* 기초 36 */
-        System.out.println(new Solution36().solution(false, true, true, true));
-        System.out.println(new Solution36().solution(true, false, false, false));
+        /*
+         * 기초 36 System.out.println(new Solution36().solution(false, true, true, true));
+         * System.out.println(new Solution36().solution(true, false, false, false));
+         */
+
+        /*
+         * 기초 37 아직 안풀었음
+         * 
+         * System.out.println(new Solution37().solution(2, 2, 2, 2));
+         * System.out.println(new Solution37().solution(4, 1, 4, 4));
+         * System.out.println(new Solution37().solution(6, 3, 3, 6));
+         * System.out.println(new Solution37().solution(6, 4, 2, 5));
+         * 
+         */
+        /*
+         * 기초 38 System.out.println(new Solution38().solution("cvsgiorszzzmrpaqpe", new
+         * int[] {16, 6, 5, 3, 12, 14, 11, 11, 17, 12, 7}));
+         */
+
+        /*
+         * 기초 39 System.out.println(new Solution39().solution("78720646226947352489"));
+         */
+
+        System.out.println(
+                new Solution40().solution("rermgorpsam", new int[][] { { 2, 3 }, { 0, 7 }, { 5, 9 }, { 6, 10 } }));
     }
 }
