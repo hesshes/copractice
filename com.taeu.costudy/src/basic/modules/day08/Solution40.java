@@ -17,14 +17,38 @@ public class Solution40 {
 //    queries의 원소는 [s, e]의 형태로 0 ≤ s ≤ e < my_string의 길이를 만족합니다.
 //    1 ≤ queries의 길이 ≤ 1,000
 
-    public String solution(String my_string, int[][] queries) {
-        char[] chars = my_string.toCharArray();
-        for (int i = 0; i < queries.length; i++) {
-            for (int j = queries[i][1]; j >= queries[i][0]; j--) {
-                char[] temp = chars;
+    public String solution(String str, int[][] q) {
+        String temp = "";
+        char[] answer;
+        char[] switcher;
+        for (int i = 0; i < q.length; i++) {
+            temp = "";
+            answer = str.toCharArray();
+            for (int j = q[i][1]; j >= q[i][0]; j--) {
+                temp += str.charAt(j);
             }
+            switcher = temp.toCharArray();
+            System.arraycopy(switcher, 0, answer, q[i][0], temp.length());
+            str = String.valueOf(answer);
         }
+        return str;
 
-        return my_string;
     }
+    /*
+     * 프로그래머스 추천 1순위 정답
+     * 
+     * char[] arr; 전역 변수로 선언해서 사용했음
+     * 
+     * public String solution(String my_string, int[][] queries) {
+     * 
+     * arr = my_string.toCharArray();
+     * 
+     * for (int[] query : queries) { reverse(query[0], query[1]); }
+     * 
+     * return new String(arr); }
+     * 
+     *
+     * private void reverse(int s, int e) { while (s < e) { char temp = arr[s]; //
+     * 별도 함수를 정의해서 사용했음 arr[s++] = arr[e]; arr[e--] = temp; } }
+     */
 }

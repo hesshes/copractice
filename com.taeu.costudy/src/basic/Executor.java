@@ -204,7 +204,9 @@ public class Executor {
          * 기초 39 System.out.println(new Solution39().solution("78720646226947352489"));
          */
 
-        System.out.println(
-                new Solution40().solution("rermgorpsam", new int[][] { { 2, 3 }, { 0, 7 }, { 5, 9 }, { 6, 10 } }));
+        /*
+         * 기초 40 System.out.println( new Solution40().solution("rermgorpsam", new
+         * int[][] { { 2, 3 }, { 0, 7 }, { 5, 9 }, { 6, 10 } }));
+         */
     }
 }
